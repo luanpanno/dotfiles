@@ -1,0 +1,30 @@
+[user]
+	name = Luan Panno
+	email = luanpanno@gmail.com
+
+[includeIf "gitdir:~/dev/lovelystay/"]
+    path = ~/dev/lovelystay/.gitconfig
+
+[core]
+	editor = vim
+[push]
+	followTags = true
+[alias]
+	c = !git add --all && git commit -m
+	s = !git status -s
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+	amend = !git add --all && git commit --amend --no-edit
+	count = !git shortlog -s --grep
+	t = !sh -c 'git tag -a $1 -m $1' -
+	bn = !git checkout -b
+	bd = !git branch -D
+	bdr = !git push origin --delete
+	br = !git branch -M
+	setpush = !git push --set-upstream
+[pull]
+	rebase = false
+[protocol]
+	version = 2
+# [commit]
+# 	gpgsign = true
+
