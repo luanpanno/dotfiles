@@ -1,0 +1,22 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.9
+    background_type = transparent
+    font = Fira Code 12
+    foreground_color = "#ffffff"
+    scrollback_infinite = True
+    use_system_font = False
+    title_transmit_bg_color = "#3584e4"
+    title_receive_bg_color = "#c80003"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
